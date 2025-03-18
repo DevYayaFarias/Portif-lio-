@@ -1,2 +1,2 @@
-# Portif-lio-
-Meus projetos e trabalhos.
+# Portifolio-
+Projetos e trabalhos já realizados.
