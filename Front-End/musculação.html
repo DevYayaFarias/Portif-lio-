@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-Estar - Musculação</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo"><span class="glow"><a href="teste.html">GLOW-UP</a></span></h1>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="nutrição.html">Nutrição</a></li>
+                    <li><a href="fisioterapia.html">Fisioterapia</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="premium.html" id="premium-btn">Seja Premium</a></li>
+                </ul>
+                <button id="dark-mode-toggle">Modo Escuro</button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" style="font-size: 47px;"> > > M U S C U L A Ç Ã O</h1>
+            <h2 class="hero-subtitle" style="color: #2c8b00;">Transforme seu Corpo com Treinamento de Força</h2>
+            <a href="cadastro.html" class="btn">Exercícios e Academias</a>
+        </div>
+    </section>
+
+   
+    <section id="services" class="services">
+        <div class="container">
+            <h1>Nossos Serviços</h1>
+            <div class="service-item">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Treinamento Personalizado</h3>
+                <p>Desenvolvemos planos de treinamento personalizados para atender às suas necessidades específicas.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Consultoria de Condicionamento Físico</h3>
+                <p>Nossos profissionais oferecem consultas detalhadas para avaliar sua condição física e estilo de vida.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-gym"></i>
+                <h3>Academias e Acompanhamento</h3>
+                <p>Oferecemos orientação sobre as melhores academias, acompanhamento de evolução e planejamento de atividades físicas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tips" class="tips">
+        <div class="container">
+            <h1>Dicas de Musculação</h1>
+            <ul>
+                <li><strong>1. Mantenha-se Hidratado:</strong> Beber água antes, durante e depois do treino é essencial.</li>
+                <li><strong>2. Treine com Foco:</strong> Estabeleça metas e mantenha o foco durante os exercícios.</li>
+                <li><strong>3. Varie os Exercícios:</strong> Experimente diferentes exercícios para evitar a monotonia e trabalhar diferentes grupos musculares.</li>
+                <li><strong>4. Escute Seu Corpo:</strong> Respeite seus limites e descanse quando necessário.</li>
+                <li><strong>5. Não Pule o Aquecimento:</strong> Sempre faça um aquecimento adequado para evitar lesões.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="workout-calendar" class="calendar">
+        <div class="container">
+            <h1>Calendário de Treinos</h1>
+            <p>Baixe nosso calendário de treinos personalizado para acompanhar seu progresso!</p>
+            <a href="calendario_treinos.pdf" class="btn" download>Baixar Calendário</a>
+        </div>
+    </section>
+
+  
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h1>Galeria de Fotos</h1>
+            <div class="gallery-grid">
+                <img src="foto1.jpg" alt="Treino de musculação">
+                <img src="foto2.jpg" alt="Treino em grupo">
+                <img src="foto3.jpg" alt="Equipamentos de musculação">
+                <img src="foto4.jpg" alt="Alimentação saudável">
+            </div>
+        </div>
+    </section>
+
+    <div class="back-to-top">
+        <a href="#home"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
+    <div class="music">
+        <audio controls loop>
+            <source src="music1.mp3" type="audio/mpeg">
+            Seu navegador não suporta áudio HTML.
+        </audio>
+        <div class="music-controls">
+            <button onclick="previousTrack()"><i class="fas fa-backward"></i></button>
+            <button onclick="document.querySelector('audio').play()"><i class="fas fa-play"></i></button>
+            <button onclick="document.querySelector('audio').pause()"><i class="fas fa-pause"></i></button>
+            <button onclick="nextTrack()"><i class="fas fa-forward"></i></button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-section">
+            <h3>Links Rápidos</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tips">Dicas</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contato</h3>
+            <ul>
+                <li>Email: glow.upldmy@gmail.com</li>
+                <li>Telefone: (41) 1234-5678</li>
+                <li>Endereço: Rua Exemplo, 123, Curitiba, PR</li>
+            </ul>
+        </div>
+        <div class="footer-section social-links">
+            <h3>Siga-nos</h3>
+            <a href="mailto:seuemail@example.com" target="_blank"><i class="far fa-envelope"></i></a>
+            <a href="https://chat.whatsapp.com/LVMMf7SKTL23pxjujo2ogy" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="footer-rating">
+            <p>Classificação: <span class="stars">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </span></p>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Glow-Up.
+        </div>
+    </footer>
+
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+       
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        darkModeToggle.onclick = function() {
+            document.body.classList.toggle('dark-mode');
+            darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Escuro';
+        };
+
+     
+   document.addEventListener('DOMContentLoaded', function() {
+            const stars = document.querySelectorAll('.stars .star');
+            stars.forEach((star, index) => {
+                star.addEventListener('click', () => {
+                    for(let i = 0; i < stars.length; i++) {
+                        if(i <= index) {
+                            stars[i].style.color = 'gold';
+                        } else {
+                            stars[i].style.color = '#ccc';
+                        }
+                    }
+                    alert(`Você avaliou com ${index + 1} estrelas!`);
+                });
+            });
+        });
+
+
+        const backToTopButton = document.querySelector('.back-to-top a');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+       
+      
+        function previousTrack() {
+          
+            alert('Música anterior!');
+        }
+
+        function nextTrack() {
+          
+            alert('Próxima música!');
+        }
+    </script>
+</body>
+</html>
