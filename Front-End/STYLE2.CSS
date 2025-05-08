@@ -10,31 +10,31 @@
         --text-color: #003623; 
         --link-text-color: #fffffffd;
         --hover-color: #ffd000; 
-        --shadow-color: rgba(0, 0, 0, 0.452); /* Cor da sombra */
+        --shadow-color: rgba(0, 0, 0, 0.452);
     }
 
     body.dark-mode {
         --primary-color: #003623; 
         --secondary-color: #2f2f2f; 
         --accent-color: #ffe75f; 
-        --background-color: #202020; /* Cor de fundo escuro */
+        --background-color: #202020;
         --cadastroparceiros-background-color: #202020;
         --cadastroprofissionais-background-color: #2e2e2e ;
         --about-background-color: #292929fb;
         --text-color: #ffffff; 
         --hover-color: #ffd000; 
-        --shadow-color: rgba(255, 255, 255, 0.1); /* Cor da sombra clara */
+        --shadow-color: rgba(255, 255, 255, 0.1); 
     }
 
     body.dark-mode {
-        background-color: var(--background-color); /* Cor de fundo escura */
-        color: var(--text-color); /* Cor do texto clara */
-        transition: background-color 0.3s, color 0.3s; /* Transição suave */
+        background-color: var(--background-color);
+        color: var(--text-color); 
+        transition: background-color 0.3s, color 0.3s; 
     }
 
     body.dark-mode header,
     body.dark-mode footer {
-        background-color: #252525; /* Fundo do cabeçalho e rodapé escuros */
+        background-color: #252525; 
     }
     .dark-mode #dark-mode-toggle {
         border-color: #bbb;
@@ -50,7 +50,7 @@
         border: 1px solid #333;
     }
     body.dark-mode .hero {
-        background-color: #1f1f1f; /* Fundo da seção hero */
+        background-color: #1f1f1f; 
     }
     body.dark-mode .btn {
         background-color: #444444;
@@ -65,52 +65,48 @@
         filter: brightness(0.8);
     }
 
-    /* Estilo para a seção do formulário de cadastro */
     body.dark-mode .form-cadastro,
     body.dark-mode .form-profissionais {
-        background-color: #272727ec; /* Fundo do formulário */
-        padding: 20px; /* Espaçamento interno */
-        border-radius: 10px; /* Bordas arredondadas */
-        box-shadow: 0 2px 5px var(--shadow-color); /* Sombra leve */
+        background-color: #272727ec; 
+        padding: 20px; 
+        border-radius: 10px; 
+        box-shadow: 0 2px 5px var(--shadow-color); 
     }
 
-    /* Campos de input e selects no modo escuro */
     body.dark-mode .form-cadastro input:focus,
     body.dark-mode .form-cadastro select:focus,
     body.dark-mode .form-profissionais input:focus,
     body.dark-mode .form-profissionais select:focus {
-        border-color: hsl(165, 57%, 73%); /* Borda ao focar */
-        outline: none; /* Remove contorno padrão */
+        border-color: hsl(165, 57%, 73%); 
+        outline: none; 
     }
 
-    /* Botões no modo escuro */
     body.dark-mode .btn-primary {
-        background-color: rgb(255, 217, 0); /* Cor do botão primário */
-        color: #121212; /* Cor do texto do botão primário */
+        background-color: rgb(255, 217, 0); 
+        color: #121212; 
     }
 
-    /* Links no modo escuro */
+    
     body.dark-mode a {
-        color: #ffee57; /* Cor dos links */
+        color: #ffee57; 
     }
 
     body.dark-mode a:hover {
-        color: #1ee789; /* Cor dos links ao passar o mouse */
+        color: #1ee789; 
     }
 
-    /* Currículos */
     body.dark-mode .curriculos {
-        background-color: #272727ec; /* Fundo da seção de currículos */
-        padding: 20px; /* Espaçamento interno */
-        border-radius: 10px; /* Bordas arredondadas */
-        box-shadow: 0 2px 5px var(--shadow-color); /* Sombra leve */
+        background-color: #272727ec; 
+        padding: 20px; 
+        border-radius: 10px; 
+        box-shadow: 0 2px 5px var(--shadow-color); 
     }
 
     body.dark-mode .curriculo-item {
-        margin-bottom: 15px; /* Espaçamento entre os currículos */
-        background-color: #1d1d1d; /* Fundo dos itens de currículos */
-        padding: 15px; /* Espaçamento interno */
-        border-radius: 5px; /* Bordas arredondadas */
+        margin-bottom: 15px; 
+        background-color: #1d1d1d; 
+        padding: 15px; 
+        border-radius: 5px; 
     }
     .dark-mode {
         background-color: #2C3E50;
@@ -174,8 +170,8 @@
 
     body {
         font-family: 'Poppins', sans-serif;
-        background-color: #ffffff; /* Cor de fundo clara */
-        color: #333; /* Cor do texto */
+        background-color: #ffffff; 
+        color: #333; 
         line-height: 1.6;
     }
     .navbar {
@@ -202,7 +198,6 @@
         padding: 8px 16px;
     }
 
-    /* Estilo para os menus suspensos */
     .dropdown-content {
         display: none;
         position: absolute;
@@ -236,7 +231,7 @@
 
 
     .content {
-        background-color: #f7f7f7; /* Cor de fundo do conteúdo */
+        background-color: #f7f7f7; 
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -269,8 +264,8 @@
     input[type="password"]:focus,
     select:focus,
     textarea:focus {
-        border-color: #333; /* Cor do foco */
-        outline: none; /* Remove a borda padrão */
+        border-color: #333; 
+        outline: none; 
     }
 
     label {
@@ -278,10 +273,9 @@
         top: 10px;
         left: 10px;
         font-size: 12px;
-        color: #aaa; /* Cor da label */
-        pointer-events: none; /* Para que a label não interfira no clique */
-        transition: all 0.3s ease; /* Transição suave */
-    }
+        color: #aaa; 
+        pointer-events: none; 
+        transition: all 0.3s ease; 
 
     input:focus + label,
     input:not(:placeholder-shown) + label,
@@ -289,11 +283,11 @@
         top: -10px;
         left: 10px;
         font-size: 10px;
-        color: #333; /* Cor quando o campo está preenchido */
+        color: #333; 
     }
 
     button.submit-btn {
-        background-color: #28a745; /* Cor do botão de cadastro */
+        background-color: #28a745; 
         color: #fff;
         border: none;
         padding: 15px;
@@ -303,10 +297,9 @@
     }
 
     button.submit-btn:hover {
-        background-color: #218838; /* Cor do botão ao passar o mouse */
+        background-color: #218838;
     }
 
-    /* Estilos para o modo escuro */
     body.dark-mode {
         background-color: #121212;
         color: #ffffff;
@@ -325,7 +318,7 @@
     }
 
     body.dark-mode label {
-        color: #ccc; /* Cor da label no modo escuro */
+        color: #ccc; 
     }
 
     body.dark-mode button.submit-btn {
@@ -349,7 +342,7 @@
     html {
         scroll-behavior: smooth;
     }
-    /* From Uiverse.io by gharsh11032000 */ 
+ 
     .menu {
         font-size: 16px;
         line-height: 1.6;
@@ -490,22 +483,19 @@
     }
     @media (max-width: 768px) {
         .navbar {
-            flex-direction: column; /* empilha os itens do menu verticalmente */
-            display: none; /* inicialmente oculta o menu */
+            flex-direction: column; 
+            display: none; 
         }
 
         .navbar.active {
-            display: flex; /* mostra o menu quando ativo */
+            display: flex; 
         }
     }
-    
-
-    /* Adicionando espaço em branco para evitar o overlap com o cabeçalho fixo */
+   
     main {
         padding-top: 100px;
     }
 
-    /* Estilos da barra de navegação */
     header {
         background-color: var(--primary-color);
         padding: 20px;
@@ -513,11 +503,11 @@
         top: 0;
         width: 100%;
         z-index: 1000;
-        box-shadow: 0 4px 12px var(--shadow-color); /* Sombra mais suave */
+        box-shadow: 0 4px 12px var(--shadow-color); 
         transition: background-color 0.3s;
     }
     header.scrolled {
-        background-color: var(--hover-color); /* Muda a cor do cabeçalho ao rolar */
+        background-color: var(--hover-color);
     }
 
 
@@ -525,8 +515,8 @@
         font-size: 32px;
         font-weight: bold;
         color: #fff893;
-        text-align: center; /* Centraliza o texto da logo */
-        margin-bottom: 15px; /* Espaço entre a logo e a navegação */
+        text-align: center; 
+        margin-bottom: 15px; 
     }
 
 
@@ -549,7 +539,7 @@
         padding: 0;
         margin: 0;
         display: flex;
-        justify-content: center; /* Centraliza os itens da lista horizontalmente */
+        justify-content: center; 
         align-items: center;
     }
 
@@ -566,22 +556,22 @@
         border-radius: 5px;
     }
     #login-btn {
-        background-color: var(--primary-color); /* Cor de fundo principal */
-        color: var(--secondary-color); /* Cor do texto */
-        border: 2px solid var(--primary-color); /* Borda com a cor principal */
-        padding: 10px 20px; /* Espaçamento interno */
-        border-radius: 25px; /* Cantos arredondados */
-        font-size: 16px; /* Tamanho da fonte */
-        font-weight: bold; /* Peso da fonte */
-        text-transform: uppercase; /* Transformação do texto */
-        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Transições */
-        cursor: pointer; /* Cursor de ponteiro */
+        background-color: var(--primary-color); 
+        color: var(--secondary-color); 
+        border: 2px solid var(--primary-color); 
+        padding: 10px 20px; 
+        border-radius: 25px; 
+        font-size: 16px;
+        font-weight: bold; 
+        text-transform: uppercase; 
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+        cursor: pointer;
     }
 
     #login-btn:hover {
-        background-color: var(--hover-color); /* Cor de fundo no hover */
-        color: var(--primary-color); /* Cor do texto no hover */
-        transform: scale(1.05); /* Efeito de escala no hover */
+        background-color: var(--hover-color); 
+        color: var(--primary-color); 
+        transform: scale(1.05); 
     }
 
     #cadastre-se-btn{
@@ -608,7 +598,7 @@
 
     .nav-links a:hover {
         color: var(--hover-color);
-        transform: scale(1.1); /* Efeito de escala no hover */
+        transform: scale(1.1);
     }
 
 
@@ -632,7 +622,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient( rgba(0,0,0,0.2), rgba(0,0,0,0.2)); /* Adiciona um gradiente sobre o fundo da hero section */
+        background: linear-gradient( rgba(0,0,0,0.2), rgba(0,0,0,0.2)); 
         z-index: -1;
     }
 
@@ -682,9 +672,9 @@
         }
         
         .hero-title {
-            margin: 0; /* Remove margens */
-            padding: 20px; /* Ajuste conforme necessário */
-            text-align: center; /* Centraliza o texto */
+            margin: 0; 
+            padding: 20px; 
+            text-align: center; 
         }
     .hero form {
         display: flex;
@@ -991,29 +981,29 @@
     }
 
         button[type="submit"] {
-            background-color: #c9b128f8; /* Cor de fundo principal */
-            color: white; /* Cor do texto */
-            border: none; /* Sem borda */
-            padding: 10px 20px; /* Espaçamento interno */
-            border-radius: 25px; /* Cantos arredondados */
-            font-size: 16px; /* Tamanho da fonte */
-            font-weight: bold; /* Peso da fonte */
-            text-transform: lowercase; /* Transformação do texto */
-            transition: background-color 0.3s ease, transform 0.3s ease; /* Transições */
-            cursor: pointer; /* Cursor de ponteiro */
+            background-color: #c9b128f8; 
+            color: white;
+            border: none; 
+            padding: 10px 20px; 
+            border-radius: 25px; 
+            font-size: 16px; 
+            font-weight: bold; 
+            text-transform: lowercase; 
+            transition: background-color 0.3s ease, transform 0.3s ease; 
+            cursor: pointer; 
             text-decoration: none;
         }
         
         button[type="submit"]:hover {
-            background-color: #007c6c; /* Cor de fundo no hover */
+            background-color: #007c6c; 
             color: #f8f665;
-            transform: scale(1.05); /* Efeito de escala no hover */
+            transform: scale(1.05); 
             
         }
         
     .btn {
-        background-color:  #00411b; /* Roxo/Lilás */
-        color: #FFF; /* Cor de texto branco */
+        background-color:  #00411b; 
+        color: #FFF; 
         padding: 10px 20px;
         border: none;
         border-radius: 5px;
@@ -1022,25 +1012,25 @@
         }
         
         .btn:hover {
-            background-color: #c5a825; /* Tom mais escuro de roxo/lilás */
+            background-color: #c5a825; 
         }
         #premium-btn{
             background: linear-gradient(45deg, #002419 ,#008f5f,#f7e164); 
-            color: #fdff97; /* Cor do texto */
-            border: 2px solid #fffd88be; /* Borda com a cor principal */
-            padding: 10px 20px; /* Espaçamento interno */
-            border-radius: 25px; /* Cantos arredondados */
-            font-size: 16px; /* Tamanho da fonte */
-            font-weight: bold; /* Peso da fonte */
-            text-transform: uppercase; /* Transformação do texto */
-            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Transições */
-            cursor: pointer; /* Cursor de ponteiro */
+            color: #fdff97; 
+            border: 2px solid #fffd88be; 
+            padding: 10px 20px; 
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase; 
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+            cursor: pointer; 
         }
         
         #premium-btn:hover {
-            background: linear-gradient(45deg, #f7e164,#008f5f, #002419); /* Cor de fundo no hover */
-            color: rgba(0, 0, 0, 0.897); /* Cor do texto no hover */
-            transform: scale(1.05); /* Efeito de escala no hover */
+            background: linear-gradient(45deg, #f7e164,#008f5f, #002419); 
+            color: rgba(0, 0, 0, 0.897); 
+            transform: scale(1.05); 
         }
         
         .back-to-top {
@@ -1048,7 +1038,7 @@
             }
             
             .back-to-top a {
-            color: #FFF; /* Cor do ícone */
+            color: #FFF; 
             font-size: 2rem;
             text-decoration: none;
             }
@@ -1109,121 +1099,115 @@
         
             .services {
                 max-width: 900px;
-                padding: 20px 10px; /* Reduzindo o padding */
-                margin: 20px auto;  /* Espaçamento entre seções */
-                background-color:var(--secondary-color); /* Fundo branco */
-                border-radius: 10px; /* Bordas arredondadas */
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+                padding: 20px 10px;
+                margin: 20px auto;  
+                background-color:var(--secondary-color); 
+                border-radius: 10px; 
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
             }
             
-            /* Cabeçalhos */
+    
             h1 {
-                color: #ffffff; /* Cor do cabeçalho */
-                font-size: 2em; /* Tamanho do cabeçalho */
-                margin-bottom: 20px; /* Espaçamento abaixo do título */
-                text-align: center; /* Centralizando o título */
+                color: #ffffff; 
+                font-size: 2em; 
+                margin-bottom: 20px;
+                text-align: center; 
             }
             
-            /* Estilos dos itens de serviço */
+           
             .service-item {
-                background-color: #fff; /* Fundo branco para itens */
-                border-radius: 8px; /* Bordas arredondadas */
-                padding: 10px; /* Reduzindo o espaçamento interno */
-                margin-bottom: 10px; /* Espaçamento entre itens */
-                display: flex; /* Flexbox para alinhamento */
-                align-items: center; /* Alinhamento vertical */
-                transition: transform 0.3s, box-shadow 0.3s; /* Efeito de transição suave */
+                background-color: #fff; 
+                border-radius: 8px; 
+                padding: 10px; 
+                margin-bottom: 10px; 
+                display: flex; 
+                align-items: center; 
+                transition: transform 0.3s, box-shadow 0.3s; 
             }
             
-            /* Ícones */
             .service-item i {
-                font-size: 20px; /* Reduzindo o tamanho do ícone */
-                color: #ffe600; /* Cor dos ícones */
-                margin-right: 10px; /* Espaço entre ícone e texto */
+                font-size: 20px; 
+                color: #ffe600; 
+                margin-right: 10px;
             }
             
-            /* Títulos de itens */
+         
             .service-item h3 {
-                font-size: 1.2em; /* Tamanho do título do item reduzido */
-                color: #ffffff; /* Cor do texto do título */
-                margin: 0; /* Removendo margem */
+                font-size: 1.2em; 
+                color: #ffffff; 
+                margin: 0; 
             }
-            
-            /* Parágrafos */
+       
             .service-item p {
-                font-size: 0.85em; /* Tamanho do texto reduzido */
-                color: #ffea8d; /* Cor do texto secundário */
+                font-size: 0.85em; 
+                color: #ffea8d; 
             }
             
-            /* Hover nos itens de serviço */
             .service-item:hover {
-                transform: translateY(-5px); /* Elevação ao passar o mouse */
-                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+                transform: translateY(-5px); 
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
             }
-            
-            /* Modo Escuro */
+
             @media (prefers-color-scheme: dark) {
                 body {
-                    background-color: #1c1c1c; /* Fundo escuro */
-                    color: #eaeaea; /* Texto claro */
+                    background-color: #1c1c1c; 
+                    color: #eaeaea; 
                 }
             
                 .services {
-                    background-color: #292929; /* Fundo escuro para seções */
+                    background-color: #292929; 
                 }
             
                 .service-item {
-                    background-color: #3a3a3a; /* Fundo para itens escuros */
-                    color: #eaeaea; /* Texto claro */
+                    background-color: #3a3a3a; 
+                    color: #eaeaea; 
                 }
             
                 .service-item i {
-                    color: #00ffb3; /* Cor dos ícones */
+                    color: #00ffb3; 
                 }
             }
             
-/* Estilo para a seção de depoimentos */
 #depoimentos {
-    background-color: #ffffff; /* Cor de fundo branco */
-    padding: 40px; /* Espaçamento interno */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: #ffffff; 
+    padding: 40px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
-/* Estilos em modo escuro */
+
 @media (prefers-color-scheme: dark) {
     #depoimentos {
-        background-color: var(--background-color); /* Cor de fundo para modo escuro */
+        background-color: var(--background-color); 
     }
 }
 
 .depoimento-item {
-    margin: 15px 0; /* Espaçamento entre depoimentos */
-    padding: 20px; /* Espaçamento interno */
-    border-left: 5px solid #e74c3c; /* Borda lateral para destaque */
-    background-color: #f9f9f9; /* Cor de fundo suave para os depoimentos */
-    transition: background-color 0.3s; /* Transição suave para cor de fundo */
+    margin: 15px 0; 
+    padding: 20px; 
+    border-left: 5px solid #e74c3c;
+    background-color: #f9f9f9; 
+    transition: background-color 0.3s; 
 }
 
-/* Estilos em modo escuro */
 @media (prefers-color-scheme: dark) {
     .depoimento-item {
-        background-color: #00ffdd; /* Cor de fundo para depoimentos em modo escuro */
+        background-color: #00ffdd; /
     }
 }
 
 .depoimento-item:hover {
-    background-color: #f1cfcf; /* Mudança de cor de fundo ao passar o mouse */
+    background-color: #f1cfcf; /
 }
 
 .depoimento-item p {
-    font-size: 1.1em; /* Tamanho do texto do depoimento */
-    color: #34495e; /* Cor do texto */
+    font-size: 1.1em; 
+    color: #34495e; 
 }
 
 .depoimento-item strong {
-    font-weight: bold; /* Negrito para o nome */
-    color: #2c3e50; /* Cor do nome */
+    font-weight: bold; 
+    color: #2c3e50; 
 }
 .tips ul {
     list-style-type: none;
@@ -1252,7 +1236,6 @@
     margin-top: 20px;
 }
 
-/* Galeria de Fotos */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -1273,8 +1256,7 @@
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-      
-                /* Tips Section */
+
     .tips {
         background-color: var(--about-background-color);
         padding: 50px 0;
@@ -1368,7 +1350,7 @@
         border-radius: 5px;
         border: 1px solid #ccc;
     }
-    /* Estilos da seção de 'Sobre Nós' */
+  
     .about-us {
         background-color: var(--about-background-color);
         padding: 60px 20px;
@@ -1402,7 +1384,7 @@
         transform: scale(1.05);
     }
 
-    /* Services Section */
+
     .services {
         background: #ebeeeb;
         padding: 60px 20px;
@@ -1452,7 +1434,7 @@
         font-size: 1.1em;
     }
 
-    /* Testimonials Section */
+
     .testimonials {
         background: var(--background-color);
         padding: 60px 20px;
@@ -1558,7 +1540,6 @@
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     }
 
-    /* Cadastro de Parceiros */
     .cadastro-parceiros {
         background-color: var(--cadastroparceiros-background-color);
         padding: 40px 20px;
@@ -1615,7 +1596,7 @@
     }
 
 
-    /* CTA Section */
+
     .cta {
         background: var(--text-color);
         color: #fff;
@@ -1808,7 +1789,6 @@
         transform: translateY(-3px);
     }
 
-    /* Keyframes for animations */
 
     .file-upload {
         display: flex;
@@ -1825,7 +1805,7 @@
     }
 
     .file-upload .btn-excluir-arquivo {
-        background-color: #c0392b; /* Vermelho para excluir */
+        background-color: #c0392b; 
         color: #fff;
         border: none;
         border-radius: 12px;
@@ -1836,7 +1816,7 @@
     }
 
     .file-upload .btn-excluir-arquivo:hover {
-        background-color: #a83227; /* Vermelho mais escuro */
+        background-color: #a83227; 
     }
 
     .form-actions {
@@ -1848,7 +1828,7 @@
 
     .btn-submit,
     .btn-editar {
-        background-color: #004d00; /* Verde escuro real */
+        background-color: #004d00; 
         color: #fff;
         border: none;
         border-radius: 12px;
@@ -1859,21 +1839,21 @@
     }
 
     .btn-submit {
-        background-color: #005700; /* Verde um pouco mais claro para submit */
+        background-color: #005700; 
     }
 
     .btn-submit:hover {
-        background-color: #004d00; /* Verde escuro real */
+        background-color: #004d00; 
     }
 
     .btn-editar {
-        background-color: #007700; /* Verde mais claro para editar */
+        background-color: #007700; 
     }
 
     .btn-editar:hover {
-        background-color: #005700; /* Verde um pouco mais claro */
+        background-color: #005700;
     }
-    /* Formulário de Edição */
+
     .edit-form {
         display: none;
         margin-top: 20px;
@@ -1884,7 +1864,7 @@
 
     .edit-form h3 {
         margin-bottom: 20px;
-        color: #2e7d32; /* Verde Escuro Real */
+        color: #2e7d32; 
     }
 
     .edit-form .form-group {
@@ -1905,7 +1885,7 @@
     }
 
     .edit-form .btn-submit {
-        background-color: #2e7d32; /* Verde Escuro Real */
+        background-color: #2e7d32; 
     }
 
     .edit-form .btn-submit:hover {
@@ -1931,7 +1911,7 @@
             transform: translateY(0);
         }
     }
-    /* Estilo para a seção de Currículos */
+
     .curriculos-profissionais {
         padding: 2.5rem;
         background: var(--cadastroprofissionais-background-color);
@@ -2011,7 +1991,7 @@
 
     .btn-editar,
     .btn-excluir {
-        background-color: #004d00; /* Verde escuro real */
+        background-color: #004d00; 
         color: #fff;
         border: none;
         border-radius: 8px;
@@ -2023,19 +2003,19 @@
     }
 
     .btn-editar {
-        background-color: #005700; /* Verde um pouco mais claro para editar */
+        background-color: #005700; 
     }
 
     .btn-editar:hover {
-        background-color: #004d00; /* Verde escuro real */
+        background-color: #004d00; 
     }
 
     .btn-excluir {
-        background-color: #c0392b; /* Vermelho para excluir */
+        background-color: #c0392b; 
     }
 
     .btn-excluir:hover {
-        background-color: #a83227; /* Vermelho mais escuro */
+        background-color: #a83227;
     }
 
 
@@ -2043,11 +2023,10 @@
 
 
 
-    /* Estilos do formulário de cadastro */
     .content {
         background: var(--secondary-color);
         padding: 40px;
-        margin: 150px auto 20px; /* Ajustado para compensar o header fixo */
+        margin: 150px auto 20px; 
         border-radius: 25px;
         max-width: 800px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -2112,7 +2091,7 @@
     .form-group input:focus,
     .form-group textarea:focus,
     .form-group select:focus {
-        border-color: #00a859; /* Verde escuro */
+        border-color: #00a859; 
         outline: none;
         box-shadow: 0 0 8px rgba(0, 168, 89, 0.5);
         background-color: #eafaf1; /* Verde claro */
@@ -2124,11 +2103,11 @@
         top: -30px;
         left: 10px;
         font-size: 0.85em;
-        color: #00a859; /* Verde escuro */
+        color: #00a859;
     }
 
     .submit-btn {
-        background: #00a859; /* Verde escuro */
+        background: #00a859; 
         color: #fff;
         border: none;
         padding: 15px 20px;
@@ -2143,7 +2122,7 @@
     }
 
     .submit-btn:hover {
-        background: #007a4d; /* Verde mais escuro */
+        background: #007a4d; 
         transform: scale(1.05);
         box-shadow: 0 6px 12px rgba(0, 168, 89, 0.3);
     }
@@ -2213,7 +2192,7 @@
     }
 
     .popup button {
-        background: #00a859; /* Verde escuro */
+        background: #00a859;
         color: #fff;
         border: none;
         padding: 10px 15px;
@@ -2223,14 +2202,14 @@
     }
 
     .popup button:hover {
-        background: #007a4d; /* Verde mais escuro */
+        background: #007a4d;
     }
 
     .popup-close {
         position: absolute;
         top: 10px;
         right: 10px;
-        background: #ff4d4d; /* Vermelho */
+        background: #ff4d4d;
         color: #fff;
         border: none;
         border-radius: 50%;
@@ -2245,7 +2224,7 @@
     }
 
     .popup-close:hover {
-        background: #e03e3e; /* Vermelho mais escuro */
+        background: #e03e3e; 
     }
 
     @keyframes fadeIn {
@@ -2257,104 +2236,98 @@
         }
     }
     .premium-plans {
-        background-color:var(--secondary-color); /* Cor de fundo para a seção de planos */
+        background-color:var(--secondary-color);
     }
     
     .plans-wrapper {
-        display: flex; /* Usando flexbox para alinhamento horizontal */
-        justify-content: space-between; /* Espaço entre os planos */
-        margin-top: 20px; /* Margem superior */
+        display: flex; /
+        justify-content: space-between; /
+        margin-top: 20px; 
     }
     
     .plan {
-        background-color: white; /* Cor de fundo dos planos */
-        border: 1px solid #ccc; /* Borda leve */
-        border-radius: 8px; /* Bordas arredondadas */
-        padding: 20px; /* Espaçamento interno */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        background-color: white;
+        border: 1px solid #ccc; 
+        border-radius: 8px; 
+        padding: 20px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
         width: 30%; /* Largura dos planos */
-        transition: transform 0.3s; /* Transição para o efeito de hover */
+        transition: transform 0.3s; 
     }
     
     .plan:hover {
-        transform: scale(1.05); /* Aumenta o plano ao passar o mouse */
+        transform: scale(1.05); 
     }
     
     .price {
-        font-size: 24px; /* Tamanho da fonte do preço */
-        font-weight: bold; /* Negrito para o preço */
-        color: #333; /* Cor do texto do preço */
+        font-size: 24px; 
+        font-weight: bold; 
+        color: #333; 
     }
     
     .features ul {
-        list-style-type: none; /* Remove marcadores da lista */
-        padding: 0; /* Remove padding padrão */
+        list-style-type: none; 
+        padding: 0;
     }
     
     .features li {
-        margin-bottom: 10px; /* Espaço entre itens da lista */
+        margin-bottom: 10px;
     }
     
     /* Botões */
     .btn {
-        background-color: #28a745; /* Cor do botão */
-        color: white; /* Cor do texto do botão */
-        padding: 10px 20px; /* Espaçamento interno */
-        border: none; /* Remove a borda padrão */
-        border-radius: 5px; /* Bordas arredondadas */
-        cursor: pointer; /* Muda o cursor ao passar o mouse */
-        transition: background-color 0.3s; /* Transição para a cor de fundo */
+        background-color: #28a745; 
+        color: white; 
+        padding: 10px 20px; 
+        border: none;
+        border-radius: 5px; 
+        cursor: pointer; 
+        transition: background-color 0.3s; 
     }
     
     .btn:hover {
-        background-color: #218838; /* Cor do botão ao passar o mouse */
+        background-color: #218838;
     }
     
-    /* Seção de formas de pagamento */
     .payment-methods {
-        margin-top: 40px; /* Espaço acima da seção de pagamento */
-        text-align: center; /* Alinhamento central */
+        margin-top: 40px;
+        text-align: center; 
     }
     
     .payment-icons {
-        font-size: 24px; /* Tamanho dos ícones de pagamento */
-        display: flex; /* Usando flexbox para alinhar os ícones */
-        justify-content: center; /* Centraliza os ícones */
-        margin-top: 10px; /* Margem superior */
-    }
-    
-    /* Seção de depoimentos */
-    .testimonials {
-        margin-top: 30px; /* Espaço acima da seção de depoimentos */
-        background-color: #fff; /* Cor de fundo para depoimentos */
-        padding: 20px; /* Espaçamento interno */
-        border-radius: 8px; /* Bordas arredondadas */
-        text-align: center; /* Alinhamento central */
-    }
-    
-    .testimonial {
-        margin-bottom: 20px; /* Espaço inferior entre depoimentos */
+        font-size: 24px; 
+        display: flex;
+        justify-content: center; 
+        margin-top: 10px; 
     }
     
    
+    .testimonials {
+        margin-top: 30px;
+        background-color: #fff; 
+        padding: 20px; 
+        border-radius: 8px; 
+        text-align: center; 
+    }
     
-    /* Responsividade */
+    .testimonial {
+        margin-bottom: 20px;
+    }
+    
+
     @media (max-width: 900px) {
         .plans-wrapper {
-            flex-direction: column; /* Muda para coluna em telas pequenas */
-            align-items: center; /* Centraliza os planos */
+            flex-direction: column; 
+            align-items: center; 
         }
     
         .plan {
-            width: 90%; /* Largura dos planos em telas pequenas */
-            margin-bottom: 30px; /* Espaço inferior entre planos */
+            width: 90%; 
+            margin-bottom: 30px; 
         }
     }
     
-    
-    /* Estilos da seção de contato */
-    /* Contact Section */
-    /* Seção de Contato */
+
     .contact {
         padding: 50px 20px;
         background-color:var(--background-color);
@@ -2390,15 +2363,15 @@
         background-color: #555;
     }
     .contact h1 {
-        font-size: 2.5rem; /* Ajuste para melhor visualização */
+        font-size: 2.5rem; 
         line-height: 1.2;
-        margin-bottom: 300px; /* Diminuir o espaçamento */
-        color: var(--text-color); /* Certifique-se de que a cor da variável esteja bem definida */
+        margin-bottom: 300px; 
+        color: var(--text-color);
         text-align: center;
         font-weight: bold;
         word-wrap: break-word;
         position: relative;
-        z-index: 10; /* Garante que o h1 fique à frente de outros elementos */
+        z-index: 10; 
     }
 
 
@@ -2406,7 +2379,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px; /* Espaçamento entre os campos */
+        gap: 20px; 
     }
 
     .contact-form input[type="text"],
@@ -2415,20 +2388,20 @@
         width: 100%;
         max-width: 500px;
         padding: 15px;
-        border: 2px solid #ddd; /* Bordas finas e suaves */
-        border-radius: 20px; /* Arredondamento leve */
+        border: 2px solid #ddd; 
+        border-radius: 20px; 
         background-color: #fff;
         transition: all 0.3s ease;
         font-size: 1rem;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     }
 
     .contact-form input[type="text"]:focus,
     .contact-form input[type="email"]:focus,
     .contact-form textarea:focus {
         background-color: #f9f9f9;
-        border-color: #15d189; /* Cor de destaque no foco */
-        box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Efeito de foco mais visível */
+        border-color: #15d189; 
+        box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); 
         outline: none;
     }
 
@@ -2436,7 +2409,6 @@
         resize: none;
     }
 
-    /* Botão com design mais minimalista */
     .contact-form button {
         background-color: #1f1f1f;
         color: white;
@@ -2446,32 +2418,32 @@
         font-size: 1rem;
         cursor: pointer;
         transition: all 0.3s ease;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve para profundidade */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     }
 
     .contact-form button:hover {
         background-color: rgb(0, 109, 85);
         color: #00ffaa;
         border-color: #00ffaa;
-        box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3); /* Efeito mais visível ao passar o mouse */
-        transform: scale(1.05); /* Animação de leve expansão */
+        box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+        transform: scale(1.05); 
     }
 
     .contact-form button:active {
-        transform: scale(0.98); /* Efeito de clique */
+        transform: scale(0.98); 
     }
 
 
     /* Ajuste para dispositivos menores */
     @media (max-width: 600px) {
         .contact h1 {
-            font-size: 2rem; /* Ajuste para telas menores */
+            font-size: 2rem;
         }
 
         .contact-form input[type="text"],
         .contact-form input[type="email"],
         .contact-form textarea {
-            width: 90%; /* Ajuste para dispositivos pequenos */
+            width: 90%;
         }
 
         .contact-form button {
@@ -2508,7 +2480,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px; /* Espaçamento entre os planos */
+        gap: 20px; 
     }
 
     .plan {
@@ -2517,10 +2489,10 @@
         border-radius: 10px;
         padding: 20px; 
         max-width: 500px;
-        width: 100%; /* Garante que o plano ocupe a largura disponível */
+        width: 100%; 
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
-        margin: 10px; /* Espaçamento entre os planos */
+        flex: 1 1 300px; 
+        margin: 10px; 
     }
 
     .plan h3 {
@@ -2581,14 +2553,14 @@
         .form-group input[type="email"],
         .form-group input[type="date"],
         .form-group textarea {
-            width: calc(100% - 20px); /* Ajuste de largura para telas menores */
+            width: calc(100% - 20px); 
         }
     }
 
-    /* Estilos para telas ainda menores */
+
     @media screen and (max-width: 600px) {
         .form-group label {
-            font-size: 14px; /* Reduzir o tamanho da fonte das etiquetas */
+            font-size: 14px;
         }
 
         .form-group input[type="text"],
@@ -2603,13 +2575,13 @@
         }
 
         button[type="submit"] {
-            font-size: 14px; /* Reduzir o tamanho da fonte do botão */
+            font-size: 14px; 
         }
     }
 
 
 
-    /* Estilos responsivos */
+
     @media screen and (max-width: 768px) {
         .music {
             left: 10px;
@@ -2622,14 +2594,14 @@
             font-size: 12px;
         }
     }
-    /* Estilos para o link de esqueceu a senha */
+ 
     #forgotPasswordBtn {
         background-color: transparent;
         color: #01311f;
         border: none;
         padding: 0;
         cursor: pointer;
-        margin-bottom: 10px; /* Espaçamento entre os botões */
+        margin-bottom: 10px; 
     }
 
     #forgotPasswordBtn:hover {
@@ -2649,10 +2621,10 @@
         justify-content: space-between;
         align-items: flex-start;
         box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-        border-top: 5px solid var(--accent-color); /* Linha no topo do rodapé */
+        border-top: 5px solid var(--accent-color);
         position: relative;
         overflow: hidden;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('rodapé.jpeg'); /* Substitua pelo caminho da sua imagem de fundo */
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('rodapé.jpeg');
         background-size: cover;
         background-position: center;
     }
@@ -2663,7 +2635,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.3); /* Camada de cor sobre a imagem */
+        background: rgba(0, 0, 0, 0.3); 
         z-index: 1;
     }
     footer p {
@@ -2705,7 +2677,7 @@
             }
 
             .popup button {
-                background: #00a859; /* Verde escuro */
+                background: #00a859; 
                 color: #fff;
                 border: none;
                 padding: 10px 15px;
@@ -2715,14 +2687,14 @@
             }
 
             .popup button:hover {
-                background: #007a4d; /* Verde mais escuro */
+                background: #007a4d; 
             }
 
             .popup-close {
                 position: absolute;
                 top: 10px;
                 right: 10px;
-                background: #ff4d4d; /* Vermelho */
+                background: #ff4d4d; 
                 color: #fff;
                 border: none;
                 border-radius: 50%;
@@ -2783,20 +2755,20 @@
         background-color: var(--hover-color);
     }
     .footer-rating .stars {
-        display: flex; /* Usa flexbox para o alinhamento */
+        display: flex; 
     }
 
     .footer-rating .stars .star {
-        cursor: pointer; /* Muda o cursor para pointer ao passar sobre as estrelas */
-        transition: transform 0.2s; /* Transição suave ao passar o mouse */
+        cursor: pointer; 
+        transition: transform 0.2s; 
     }
 
     .footer-rating .stars .star:hover {
-        transform: scale(1.2); /* Aumenta o tamanho da estrela ao passar o mouse */
+        transform: scale(1.2); 
     }
 
     .stars {
-        display: inline-block; /* Para centralizar horizontalmente */
+        display: inline-block; 
     }
 
     .stars .star {
@@ -2812,7 +2784,7 @@
     }
 
     .footer-bottom {
-        text-align: center; /* Centraliza o texto do rodapé */
+        text-align: center; 
         margin-top: 20px;
         font-size: 0.9rem;
         color: var(--secondary-color);
@@ -2884,31 +2856,31 @@
     .cta-section {
         text-align: center;
         margin: 20px auto;
-        padding: 20px 10px; /* Reduz o padding para menos espaço interno */
+        padding: 20px 10px; 
         background: var(--accent-color);
         color: #fff;
-        border-radius: 8px; /* Borda arredondada um pouco menor */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais leve */
+        border-radius: 8px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
         max-width: 600px; /* Reduz a largura máxima */
     }
 
     .cta-section h3 {
         margin-bottom: 15px;
-        font-size: 1.6rem; /* Reduz o tamanho da fonte do título */
+        font-size: 1.6rem;
     }
 
     .cta-section p {
         margin-bottom: 20px;
-        font-size: 1.2rem; /* Reduz o tamanho da fonte do parágrafo */
+        font-size: 1.2rem;
     }
 
     .cta-section a {
         color: #fff;
         background: var(--primary-color);
-        padding: 10px 20px; /* Reduz o padding do botão */
+        padding: 10px 20px;
         border-radius: 20px;
         text-decoration: none;
-        font-size: 1.2rem; /* Reduz o tamanho da fonte do botão */
+        font-size: 1.2rem; 
         transition: background 0.3s, transform 0.3s;
     }
 
@@ -2919,11 +2891,11 @@
 
     .social-links i {
         font-size: 1.5rem;
-        color: #f5df60; /* Cor padrão dos ícones */
+        color: #f5df60; 
         margin: 0 10px;
     }
     .social-links i:hover {
-        color: #8d7800; /* Cor padrão dos ícones */
+        color: #8d7800; 
     }
     .navbar a {
         display: inline-block;
