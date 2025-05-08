@@ -7,5 +7,4 @@ Curitiba - PR | 18 anos <br>
 💡 ** O esforço vence talento**
 </p>
 
-Aqui tem:
-Prototipos (versões beta)
+
