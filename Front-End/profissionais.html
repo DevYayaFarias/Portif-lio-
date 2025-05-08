@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow-Up</title>
+    <link rel="stylesheet" href="STYLE2.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1 class="logo"><span class="glow"><a href="teste.html">GLOW-UP</a></span></h1>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="teste.html">Início</a></li>
+                <li><a href="parceiros.html">Para parceiros</a></li>
+                
+            </ul>
+            <button id="dark-mode-toggle">Modo Escuro</button>
+        </nav>
+    </div>
+</header>
+
+<div class="hero">
+    <div class="hero-content">
+        <h1>Transforme sua Carreira com Glow-Up</h1>
+        <p>Junte-se a uma comunidade exclusiva de especialistas em musculação, nutrição e fisioterapia e alcance novos patamares na sua profissão.</p>
+        <div class="hero-buttons">
+            <button type="submit" class="btn-primary">Saiba Mais</button>
+            <button type="button" class="btn-secondary">Fale Conosco</button>
+        </div>
+        <div class="hero-testimonials">
+            <h3>O que nossos parceiros dizem:</h3>
+            <div class="testimonial">
+                <p>"A Glow-Up transformou a maneira como conecto com meus clientes. A plataforma é incrível e o suporte é excepcional!"</p>
+                <span>- Dr. João Silva, Fisioterapeuta</span>
+            </div>
+            <div class="testimonial">
+                <p>"Trabalhar com a Glow-Up foi um divisor de águas para minha carreira. A visibilidade e oportunidades são únicas."</p>
+                <span>- Maria Oliveira, Nutricionista</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="cadastro" class="cadastro-profissionais">
+    <h2>Cadastro de Profissionais</h2>
+    <p>Preencha o formulário abaixo para se cadastrar e, após aprovação, divulgar seu trabalho na plataforma Glow-Up.</p>
+    <form id="form-cadastro" action="submit_cadastro.html" method="POST" class="form-cadastro">
+        <div class="form-group">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="especialidade">Especialidade:</label>
+            <select id="especialidade" name="especialidade">
+                <option value="musculacao">Musculação</option>
+                <option value="nutricao">Nutrição</option>
+                <option value="fisioterapia">Fisioterapia</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="curriculo">Currículo (PDF):</label>
+            <div class="file-upload">
+                <input type="file" id="curriculo" name="curriculo" accept=".pdf" required>
+                <button type="button" class="btn-excluir-arquivo" onclick="removeFile()">Excluir Arquivo</button>
+            </div>
+            <div id="success-message" style="display:none; color: green;">Currículo enviado com sucesso!</div>
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn-submit">Enviar Cadastro</button>
+        </div>
+    </form>
+</section>
+
+<section class="curriculos-profissionais">
+    <h2>Conheça Nossos Profissionais</h2>
+    <div class="lista-curriculos">
+        <div class="curriculo-item">
+            <h3>Dr. João Silva</h3>
+            <p>Fisioterapeuta especializado em reabilitação esportiva.</p>
+            <a href="curriculo_joao_silva.pdf" target="_blank" class="btn-curriculo">Ver Currículo</a>
+            <button class="btn-editar" data-nome="Dr. João Silva">Editar</button>
+            <button class="btn-excluir" data-nome="Dr. João Silva">Excluir</button>
+        </div>
+        <div class="curriculo-item">
+            <h3>Maria Oliveira</h3>
+            <p>Nutricionista com foco em nutrição esportiva.</p>
+            <a href="curriculo_maria_oliveira.pdf" target="_blank" class="btn-curriculo">Ver Currículo</a>
+            <button class="btn-editar" data-nome="Maria Oliveira">Editar</button>
+            <button class="btn-excluir" data-nome="Maria Oliveira">Excluir</button>
+        </div>
+      
+    </div>
+</section>
+
+
+<div id="popup-sucesso" class="popup-overlay" style="display:none;">
+    <div class="popup">
+        <h2>Cadastro enviado com sucesso!</h2>
+        <p>Seu cadastro foi realizado com sucesso. Clique no botão abaixo para ir para a página de login.</p>
+        <button id="btn-login">Ir para Login</button>
+    </div>
+</div>
+
+<div class="music">
+    <audio controls loop>
+        <source src="music1.mp3" type="audio/mpeg">
+        <source src="music2.mp3" type="audio/mpeg">
+        <source src="music3.mp3" type="audio/mpeg">
+        <source src="music4.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio HTML.
+    </audio>
+    <div class="music-controls">
+        <button onclick="previousTrack()"><i class="fas fa-backward"></i></button>
+        <button onclick="document.querySelector('audio').play()"><i class="fas fa-play"></i></button>
+        <button onclick="document.querySelector('audio').pause()"><i class="fas fa-pause"></i></button>
+        <button onclick="nextTrack()"><i class="fas fa-forward"></i></button>
+    </div>
+</div>
+
+<a href="https://wa.me/+5541996487604" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+ <footer>
+    <div class="footer-section">
+        <h3>Links Rápidos</h3>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+    <div class="footer-section">
+        <h3>Contato</h3>
+        <ul>
+            <li>Email: glow.upldmy@gmail.com</li>
+            <li>Telefone: (41) 1234-5678</li>
+            <li>Endereço: Rua Exemplo, 123, Curitiba, PR</li>
+        </ul>
+    </div>
+    <div class="footer-section social-links">
+        <h3>Siga-nos</h3>
+        <a href="mailto:seuemail@example.com" target="_blank"><i class="far fa-envelope"></i></a>
+        <a href="https://chat.whatsapp.com/LVMMf7SKTL23pxjujo2ogy" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="footer-rating">
+        <p>Classificação: <span class="stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+        </span></p>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 Glow-Up.
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+<script>
+    
+
+     document.addEventListener('DOMContentLoaded', function() {
+            const stars = document.querySelectorAll('.stars .star');
+            stars.forEach((star, index) => {
+                star.addEventListener('click', () => {
+                    for(let i = 0; i < stars.length; i++) {
+                        if(i <= index) {
+                            stars[i].style.color = 'gold';
+                        } else {
+                            stars[i].style.color = '#ccc';
+                        }
+                    }
+                    alert(`Você avaliou com ${index + 1} estrelas!`);
+                });
+            });
+        });
+ 
+
+    function showPopup() {
+        document.getElementById('popup-sucesso').style.display = 'block';
+    }
+
+   
+    document.getElementById('form-cadastro').onsubmit = function(event) {
+        event.preventDefault(); 
+
+        const successMessage = document.getElementById('success-message');
+        successMessage.style.display = 'block';
+        successMessage.textContent = 'Currículo enviado com sucesso!';
+
+       
+        this.reset();
+        this.style.display = 'none';
+
+       
+        showPopup();
+
+        
+    };
+
+    document.getElementById('btn-login').onclick = function() {
+        window.location.href = "login.html";
+    };
+
+    function removeFile() {
+        document.getElementById('curriculo').value = ""; 
+    }
+
+    const musicList = [
+        "music1.mp3",
+        "music2.mp3",
+        "music3.mp3",
+        "music4.mp3"
+    ];
+
+    
+    let currentTrack = 0;
+
+ 
+    function nextTrack() {
+        const audio = document.querySelector('audio');
+        currentTrack = (currentTrack + 1) % musicList.length; 
+        audio.src = musicList[currentTrack]; 
+        audio.play();
+    }
+
+
+    function previousTrack() {
+        const audio = document.querySelector('audio');
+        currentTrack = (currentTrack - 1 + musicList.length) % musicList.length; 
+        audio.src = musicList[currentTrack]; 
+        audio.play(); 
+    }
+
+
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    darkModeToggle.onclick = function() {
+        document.body.classList.toggle('dark-mode');
+        
+   
+        if (document.body.classList.contains('dark-mode')) {
+            darkModeToggle.textContent = 'Modo Claro';
+        } else {
+            darkModeToggle.textContent = 'Modo Escuro';
+        }
+    };
+
+    const deleteButtons = document.querySelectorAll('.btn-excluir');
+    deleteButtons.forEach(button => {
+        button.onclick = function() {
+            const name = this.getAttribute('data-nome');
+            if (confirm(`Tem certeza que deseja excluir o currículo de ${name}?`)) {
+               
+                alert(`${name} foi excluído com sucesso!`); 
+              
+                this.parentElement.remove(); 
+            }
+        };
+    });
+
+    
+    const editButtons = document.querySelectorAll('.btn-editar');
+    editButtons.forEach(button => {
+        button.onclick = function() {
+            const name = this.getAttribute('data-nome'); 
+            alert(`Abrindo o editor para ${name}.`); 
+      
+        };
+    });
+</script>
+
+</body>
+</html>
