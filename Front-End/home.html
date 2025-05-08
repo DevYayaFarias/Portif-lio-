@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="STYLE2.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo"><span class="glow"><a href="teste.html">GLOW-UP</a></span></h1>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="nutrição.html">Nutrição</a></li>
+                    <li><a href="musculação.html">Musculação</a></li>
+                    <li><a href="fisioterapia.html">Fisioterapia</a></li>
+                    <li><a href="Contato.html">Contato</a></li>
+                    <li><a href="premium.html" id="premium-btn">Seja Premium</a></li>
+                </ul>
+                <button id="dark-mode-toggle">Modo Escuro</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Bem-Vindo ao Glow-Up</h1>
+            <h2>Seu parceiro em saúde e bem-estar</h2>
+            <p>Conecte-se com especialistas em nutrição, musculação e fisioterapia.</p>
+            <a href="cadastro.html" class="btn-primary">Comece Aqui</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="service-boxes">
+                <div class="service-box">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Musculação</h3>
+                    <p>Treinamentos personalizados para atingir seus objetivos de forma eficiente e segura.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-apple-alt"></i>
+                    <h3>Nutrição</h3>
+                    <p>Planos alimentares adaptados às suas necessidades e metas de saúde.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-thermometer-half"></i>
+                    <h3>Fisioterapia</h3>
+                    <p>Tratamentos especializados para recuperação e manutenção da saúde física.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>O que nossos clientes dizem</h2>
+            <div class="testimonial-box">
+                <p>"O Glow-Up transformou minha saúde e bem-estar. Recomendo a todos!"</p>
+                <cite>- João Silva</cite>
+            </div>
+            <div class="testimonial-box">
+                <p>"A equipe é muito profissional e os resultados são incríveis. Estou muito satisfeito."</p>
+                <cite>- Maria Oliveira</cite>
+            </div>
+        </div>
+    </section>
+
+    <div class="back-to-top">
+        <a href="#header"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
+    <div class="music">
+        <audio controls loop>
+            <source src="music2.mp3" type="audio/mpeg">
+            Seu navegador não suporta áudio HTML.
+        </audio>
+        <div class="music-controls">
+            <button id="prev-btn"><i class="fas fa-backward"></i></button>
+            <button id="play-btn"><i class="fas fa-play"></i></button>
+            <button id="pause-btn" style="display: none;"><i class="fas fa-pause"></i></button>
+            <button id="next-btn"><i class="fas fa-forward"></i></button>
+        </div>
+    </div>
+
+    <button class="scroll-top-btn" onclick="scrollToTop()" style="display: none;">↑</button>
+
+    <footer>
+        <div class="footer-section">
+            <h3>Links Rápidos</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contato</h3>
+            <ul>
+                <li>Email: contato@example.com</li>
+                <li>Telefone: (11) 1234-5678</li>
+                <li>Endereço: Rua Exemplo, 123, São Paulo, SP</li>
+            </ul>
+        </div>
+        <div class="footer-section social-links">
+            <h3>Siga-nos</h3>
+            <a href="mailto:seuemail@example.com" target="_blank"><i class="far fa-envelope"></i></a>
+            <a href="https://chat.whatsapp.com/LVMMf7SKTL23pxjujo2ogy" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="footer-rating">
+            <p>Classificação: <span class="stars">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </span></p>
+        </div>
+        
+        <div class="footer-bottom">
+            &copy; 2024 Glow-Up.
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Lista de músicas
+        const musicList = ['music1.mp3', 'music2.mp3', 'music3.mp3'];
+        let currentSongIndex = 0;
+
+        const audioPlayer = document.querySelector('audio');
+        const playBtn = document.getElementById('play-btn');
+        const pauseBtn = document.getElementById('pause-btn');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+
+        loadSong(musicList[currentSongIndex]);
+
+        function loadSong(song) {
+            audioPlayer.src = song;
+        }
+
+        playBtn.addEventListener('click', () => {
+            audioPlayer.play();
+            playBtn.style.display = 'none';
+            pauseBtn.style.display = 'inline';
+        });
+
+        pauseBtn.addEventListener('click', () => {
+            audioPlayer.pause();
+            pauseBtn.style.display = 'none';
+            playBtn.style.display = 'inline';
+        });
+
+        nextBtn.addEventListener('click', nextTrack);
+        prevBtn.addEventListener('click', previousTrack);
+
+        function nextTrack() {
+            currentSongIndex = (currentSongIndex + 1) % musicList.length;
+            loadSong(musicList[currentSongIndex]);
+            audioPlayer.play();
+        }
+
+        function previousTrack() {
+            currentSongIndex = (currentSongIndex - 1 + musicList.length) % musicList.length;
+            loadSong(musicList[currentSongIndex]);
+            audioPlayer.play();
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.querySelector(".scroll-top-btn").style.display = "block";
+            } else {
+                document.querySelector(".scroll-top-btn").style.display = "none";
+            }
+        };
+         // Modo Escuro
+         const darkModeToggle = document.getElementById('dark-mode-toggle');
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+
+    </script>
+</body>
+</html>
